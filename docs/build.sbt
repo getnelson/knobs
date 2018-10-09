@@ -18,3 +18,6 @@ includeFilter in makeSite := "*.yml" | "*.md" | "*.html" | "*.css" | "*.png" | "
 
 git.remoteRepo := "git@github.com:getnelson/knobs.git"
 
+scalacOptions ~= {
+  _.filterNot(Set("-Ywarn-unused:params", "-Ywarn-unused:imports"))
+}
