@@ -26,9 +26,9 @@ lazy val knobs = project.in(file(".")).aggregate(core, typesafe, zookeeper)
 
 lazy val core = project
 
-lazy val typesafe = project.dependsOn(core)
+lazy val typesafe = project.dependsOn(core % "test->test;compile->compile")
 
-lazy val zookeeper = project.dependsOn(core)
+lazy val zookeeper = project.dependsOn(core % "test->test;compile->compile")
 
 lazy val docs = project.dependsOn(zookeeper)
 

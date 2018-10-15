@@ -16,7 +16,14 @@
 //: ----------------------------------------------------------------------------
 import verizon.build._
 
+enablePlugins(ScalaTestPlugin)
+
 libraryDependencies ++= Seq(
   "co.fs2"            %% "fs2-core" % "1.0.0",
   "io.verizon.ermine" %% "parser"   % "0.5.9"
 )
+
+
+scalaTestVersion := "3.0.5"
+
+scalaCheckVersion := "1.13.5"
