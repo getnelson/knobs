@@ -4,9 +4,9 @@ Knobs
 ![image](docs/src/site/img/logo.png)
 
 [![Join the chat at https://gitter.im/oncue/knobs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/oncue/knobs)
-[![Build Status](https://travis-ci.org/Verizon/knobs.svg?branch=master)](https://travis-ci.org/Verizon/knobs)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.verizon.knobs/core_2.11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.verizon.knobs/core_2.11)
-[![codecov](https://codecov.io/gh/Verizon/knobs/branch/master/graph/badge.svg)](https://codecov.io/gh/Verizon/knobs)
+[![Build Status](https://travis-ci.org/getnelson/knobs.svg?branch=master)](https://travis-ci.org/getnelson/knobs)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.getnelson.knobs/core_2.11/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.getnelson.knobs/core_2.11)
+[![codecov](https://codecov.io/gh/getnelson/knobs/branch/master/graph/badge.svg)](https://codecov.io/gh/getnelson/knobs)
 
-Please [view the documentation](http://oncue.github.io/knobs/) for more information, and go to [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.verizon.knobs%22) for the latest releases.
+Please [view the documentation](http://oncue.github.io/knobs/) for more information, and go to [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.getnelson.knobs%22) for the latest releases.
 
