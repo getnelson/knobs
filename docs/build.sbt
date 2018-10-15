@@ -16,5 +16,4 @@ ghpagesNoJekyll := false
 
 includeFilter in makeSite := "*.yml" | "*.md" | "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | "*.js" | "*.swf"
 
-git.remoteRepo := "git@github.com:Verizon/knobs.git"
-
+git.remoteRepo := "git@github.com:getnelson/knobs.git"
