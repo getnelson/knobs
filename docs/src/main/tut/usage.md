@@ -46,8 +46,11 @@ To require the file "foo.cfg" from the classpath:
 
 ```tut
 import knobs.{Required,ClassPathResource,Config}
-import cats.effect.IO
+import cats.effect.{ContextShift, IO}
 import scala.concurrent.ExecutionContext.Implicits.global
+
+// Provided automatically if you're in IOApp
+implicit val cs: ContextShift[IO] = IO.contextShift(global)
 
 val cfg: IO[Config] = knobs.loadImmutable[IO](
   Required(ClassPathResource("foo.cfg")) :: Nil)
@@ -268,7 +271,7 @@ val c1: IO[Config] =
 
 val cfg = for {
   a <- c1
-  b <- aws.config
+  b <- aws.config[IO]
 } yield a ++ b
 ```
 
