@@ -15,9 +15,9 @@ export TRAVIS_REPO_SLUG="getnelson/knobs"
 export TRAVIS_BUILD_NUMBER="$BUILDKITE_BUILD_NUMBER"
 export KNOBS_TEST_DIR="knobs-test"
 
-if [ "$BUILDKITE_PULL_REQUEST" = 'false' ]; then
+if [ "${BUILDKITE_PULL_REQUEST:-}" = 'false' ]; then
 	git checkout -qf "$BUILDKITE_BRANCH";
 fi
 
 echo "--> running build for ${TRAVIS_SCALA_VERSION}..."
-sbt "++${TRAVIS_SCALA_VERSION} 'release with-defaults'"
+"sbt ++${TRAVIS_SCALA_VERSION} 'release with-defaults'"
