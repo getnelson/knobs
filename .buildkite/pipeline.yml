@@ -2,12 +2,23 @@
 steps:
   - label: ":hammer: build"
     command: .buildkite/pipeline.exec.sh
-    concurrency: 1
-    concurrency_group: primary
     timeout_in_minutes: 45
     branches: master
     env:
       - BUILDKITE_CLEAN_CHECKOUT: true
+      - TRAVIS_SCALA_VERSION: "2.11.12"
+      - TRAVIS_JOB_NUMBER: "1.1"
+    agents:
+      os: linux
+
+  - label: ":hammer: build"
+    command: .buildkite/pipeline.exec.sh
+    timeout_in_minutes: 45
+    branches: master
+    env:
+      - BUILDKITE_CLEAN_CHECKOUT: true
+      - TRAVIS_SCALA_VERSION: "2.12.4"
+      - TRAVIS_JOB_NUMBER: "1.2"
     agents:
       os: linux
 
