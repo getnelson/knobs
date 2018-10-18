@@ -5,9 +5,9 @@ steps:
     timeout_in_minutes: 45
     branches: master
     env:
-      - BUILDKITE_CLEAN_CHECKOUT: true
-      - TRAVIS_SCALA_VERSION: "2.11.12"
-      - TRAVIS_JOB_NUMBER: "1.1"
+      BUILDKITE_CLEAN_CHECKOUT: true
+      TRAVIS_SCALA_VERSION: "2.11.12"
+      TRAVIS_JOB_NUMBER: "1.1"
     agents:
       os: linux
 
@@ -16,9 +16,9 @@ steps:
     timeout_in_minutes: 45
     branches: master
     env:
-      - BUILDKITE_CLEAN_CHECKOUT: true
-      - TRAVIS_SCALA_VERSION: "2.12.4"
-      - TRAVIS_JOB_NUMBER: "1.2"
+      BUILDKITE_CLEAN_CHECKOUT: true
+      TRAVIS_SCALA_VERSION: "2.12.4"
+      TRAVIS_JOB_NUMBER: "1.2"
     agents:
       os: linux
 

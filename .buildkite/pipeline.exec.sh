@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+set -o errexit
+set -o errtrace
+set -o nounset
+set -o pipefail
+
 git config --global user.email "team@getnelson.io"
 git config --global user.name "Nelson Team"
 
