@@ -20,4 +20,4 @@ if [ "${BUILDKITE_PULL_REQUEST:-}" = 'false' ]; then
 fi
 
 echo "--> running build for ${TRAVIS_SCALA_VERSION}..."
-"sbt ++${TRAVIS_SCALA_VERSION} 'release with-defaults'"
+eval "sbt ++${TRAVIS_SCALA_VERSION} 'release with-defaults'"
