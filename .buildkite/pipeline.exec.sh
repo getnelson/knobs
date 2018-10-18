@@ -14,4 +14,5 @@ if [ "$BUILDKITE_PULL_REQUEST" = 'false' ]; then
 	git checkout -qf "$BUILDKITE_BRANCH";
 fi
 
-sbt "++${TRAVIS_SCALA_VERSION}" 'release with-defaults'
+echo "--> running build for ${TRAVIS_SCALA_VERSION}..."
+sbt "++${TRAVIS_SCALA_VERSION} 'release with-defaults'"
