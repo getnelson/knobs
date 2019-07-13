@@ -14,8 +14,9 @@
 //:   limitations under the License.
 //:
 //: ----------------------------------------------------------------------------
-package verizon.build
+package io.getnelson.knobs.build
 
+import verizon.build.RigPlugin
 import sbt._, Keys._
 import xerial.sbt.Sonatype.autoImport.sonatypeProfileName
 
