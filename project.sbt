@@ -14,7 +14,7 @@
 //:   limitations under the License.
 //:
 //: ----------------------------------------------------------------------------
-organization in Global := "io.verizon.knobs"
+organization in Global := "io.getnelson.knobs"
 
 crossScalaVersions in Global := Seq("2.12.4", "2.11.12")
 
@@ -22,15 +22,15 @@ scalaVersion in Global := crossScalaVersions.value.head
 
 scalacOptions in Global := Seq("-Ypartial-unification")
 
-lazy val knobs = project.in(file(".")).aggregate(core, typesafe, zookeeper, docs)
+lazy val knobs = project.in(file(".")).aggregate(core, typesafe, zookeeper)
 
 lazy val core = project
 
-lazy val typesafe = project.dependsOn(core)
+lazy val typesafe = project.dependsOn(core % "test->test;compile->compile")
 
-lazy val zookeeper = project.dependsOn(core)
+lazy val zookeeper = project.dependsOn(core % "test->test;compile->compile")
 
-lazy val docs = project.dependsOn(core, zookeeper)
+lazy val docs = project.dependsOn(zookeeper)
 
 enablePlugins(DisablePublishingPlugin)
 

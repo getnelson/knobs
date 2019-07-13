@@ -14,7 +14,7 @@ First you need to add the dependency for Knobs to your `build.scala` or your `bu
 libraryDependencies += "io.getnelson.knobs" %% "core" % "x.x.+"
 ````
 
-Where `x.x` is the desired Knobs version.  Knobs follows traditional [semantic versioning](semver).  Check for the latest release [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.verizon.knobs%22).
+Where `x.x` is the desired Knobs version.  Knobs follows traditional [semantic versioning](semver).  Check for the latest release [Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.getnelson.knobs%22).
 
 [semver]: https://semver.org/
 
